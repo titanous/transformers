@@ -711,6 +711,7 @@ class BatchEncoding(UserDict):
                         "Unable to create tensor returning overflowing tokens of different lengths. "
                         "Please see if a fast version of this tokenizer is available to have this feature available."
                     )
+                raise
 
         return self
 
