@@ -161,10 +161,6 @@ class BatchFeature(UserDict):
             except:  # noqa E722
                 if key == "overflowing_values":
                     raise ValueError("Unable to create tensor returning overflowing values of different lengths. ")
-                raise ValueError(
-                    "Unable to create tensor, you should probably activate padding "
-                    "with 'padding=True' to have batched tensors with the same length."
-                )
 
         return self
 
